@@ -35,3 +35,4 @@ Pattern vx : vx.x.x
 ### Publish the version
 
 `git push --follow-tags --set-upstream origin releases/vx.x.x`
+# ANOMALY-SCANNER
