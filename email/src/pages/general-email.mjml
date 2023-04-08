@@ -1,0 +1,84 @@
+<mjml lang="fr">
+  <mj-head>
+    <mj-title>MTAS - Michelin Tire Anomaly Scanner</mj-title>
+    <mj-preview>Preview - Welcome to Coded Mails</mj-preview>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" font-size="16px" color="#54595f"></mj-all>
+      <mj-button border-radius="30px" line-height="30px" background-color="#54595f" color="white" align="center"></mj-button>
+      <mj-text font-weight="400" line-height="22px"></mj-text>
+      <mj-class name="heading" font-weight="400" font-size="18px" line-height="30px" />
+      <mj-class name="footer-text" color="#54595f" font-size="14px" line-height="18px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      h1,
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: normal;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: #54595f;
+        text-decoration: underline;
+      }
+    </mj-style>
+    <mj-style>
+      a,
+      span,
+      td,
+      th {
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#eaeaea">
+    <mj-section>
+      <mj-column>
+        <mj-spacer></mj-spacer>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/hero.mjml" />
+
+    <mj-section background-color="#ffffff" border-radius="0 0 20px 20px">
+      <mj-column width="100%">
+
+        <mj-text mj-class="heading">
+          <h2> Bonjour</h2>
+        </mj-text>
+        <mj-text>
+          <h1>You have a new support message.</h1>
+        </mj-text>
+
+        <mj-text font-style="italic">
+          <p><strong> Message </strong> : It has survived not only five centuries, but the normal behaviour of the loream is not about just the values you get from the mathamatical equation but also... </p>
+        </mj-text>
+
+        <mj-button align="center" href="https://google.com">
+          Read the complete message
+        </mj-button>
+
+        <mj-text>If you have any questions simply reply to this email and we would be more than happy to reply. :)</mj-text>
+
+      </mj-column>
+
+    </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../components/footer.mjml" />
+    <mj-include path="../components/common/bottom-spacer.mjml" />
+
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,33 @@
+#!/bin/bash
+set -e
+
+DC="docker compose -f docker-compose.prod.yml"
+
+up() {
+    $DC up $2
+}
+
+down() {
+    $DC down $2
+}
+
+logs() {
+    $DC logs $2
+}
+
+# Router
+case "$1" in
+up)
+    up "$@"
+    ;;
+down)
+    down "$@"
+    ;;
+logs)
+    logs "$@"
+    ;;
+*)
+    echo "Usage: $0 {up|down|logs}"
+    exit 1
+    ;;
+esac

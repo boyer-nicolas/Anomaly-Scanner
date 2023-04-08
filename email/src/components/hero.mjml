@@ -1,0 +1,12 @@
+<mjml>
+  <mj-body>
+    <mj-section border-radius="20px 20px 0 0" background-size="cover" background-repeat="no-repeat" background-url="http://localhost:1337/uploads/MTAS_Logo_6d35dd4a09.svg">
+      <mj-column>
+        <mj-text>
+          <p>Notification</p>
+        </mj-text>
+        <mj-spacer height="450px"></mj-spacer>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

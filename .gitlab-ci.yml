@@ -1,0 +1,49 @@
+image: node:lts
+
+stages: 
+  - build_frontend
+  - test_frontend
+  - build_api
+
+build_frontend:
+  stage: build_frontend
+  only:
+    - main
+    - develop
+  tags:
+    - node
+  script:
+    - |
+      cd frontend
+      npm install
+      npm run build
+      cd ..
+
+test_frontend:
+  stage: test_frontend
+  only:
+    - main
+    - develop
+  tags:
+    - node
+  script:
+    - |
+      cd frontend
+      npm install
+      npx vitest --run
+      cd ..
+
+build_api:
+  stage: build_api
+  only:
+    - main
+    - develop
+  image: node:16
+  tags:
+    - node
+  script:
+    - |
+      cd api
+      npm install
+      npm run build
+      cd ..

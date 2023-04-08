@@ -1,0 +1,170 @@
+  <mj-wrapper background-color="#f9f9f9" padding="10px 25px">
+
+    <mj-section padding="5px 0" padding="5px 0">
+      <mj-group>
+        <mj-column>
+          <mj-text font-size="14px" line-height="20px" padding="5px 0 0 0">
+            <p>December 18, 2020</p>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text align="right" mj-class="light-text" font-weight="700">
+            <p>Order No: 788233</p>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section border-bottom="1px solid #ddd" border-top="1px solid #ddd" padding="5px 0">
+      <mj-group>
+        <mj-column>
+          <mj-text letter-spacing="1px" font-size="14px" font-weight="bold" padding="5px 0 0 0" text-transform="uppercase">
+            <p>Items Ordered</p>
+          </mj-text>
+        </mj-column>
+
+      </mj-group>
+    </mj-section>
+
+    <mj-section border-bottom="1px solid #ddd" padding="10px 0 5px 0">
+      <mj-column width="25%">
+        <mj-image padding="0 5px 5px 0" fluid-on-mobile="true" src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text padding="0">
+          <p>Product Name</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Size:</strong> 32X30 Athletic</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Color:</strong> Slate Grey</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Qty:</strong> 2</p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="25%" vertical-align="bottom">
+        <mj-text align="right" padding="0">
+          <p>$28.00</p>
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <mj-section border-bottom="1px solid #ddd" padding="10px 0 5px 0">
+      <mj-column width="25%">
+        <mj-image padding="0 5px 5px 0" fluid-on-mobile="true" src="https://images.unsplash.com/photo-1529634885322-b17ffaf423ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text padding="0">
+          <p>Product Name</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Size:</strong> 32X30 Athletic</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Color:</strong> Slate Grey</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Qty:</strong> 2</p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="25%" vertical-align="bottom">
+        <mj-text align="right" padding="0">
+          <p>$32.00</p>
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+    <mj-section border-bottom="1px solid #ddd" padding="10px 0 5px 0">
+      <mj-column width="25%">
+        <mj-image padding="0 5px 5px 0" fluid-on-mobile="true" src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text padding="0">
+          <p>Product Name</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Size:</strong> 32X30 Athletic</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Color:</strong> Slate Grey</p>
+        </mj-text>
+        <mj-text mj-class="light-text" padding="0">
+          <p><strong>Qty:</strong> 2</p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="25%" vertical-align="bottom">
+        <mj-text align="right" padding="0">
+          <p>$68.00</p>
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <mj-section padding="10px 0">
+      <mj-group>
+        <mj-column>
+          <mj-text font-size="14px" line-height="20px" padding="5px 0 0 0">
+            <p>Discount</p>
+            <p>Subtotal</p>
+            <p>Tax</p>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="14px" line-height="20px" align="right" padding="5px 0 0">
+            <p>$5.00</p>
+            <p>$233.00</p>
+            <p>$20.00</p>
+
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section border-top="1px solid #ddd" padding="5px 0">
+      <mj-group>
+        <mj-column>
+          <mj-text padding="5px 0 0 0" font-size="18px" line-height="24px" font-weight="bold">
+            <p>Total</p>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="18px" font-weight="bold" line-height="24px" align="right" padding="5px 0 0">
+            <p>$253.00</p>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section border-top="1px solid #ddd">
+      <mj-group>
+        <mj-column>
+          <mj-text font-size="14px" font-weight="bold" padding="5px 0 0 0" text-transform="uppercase">
+            <p>Billing Info</p>
+          </mj-text>
+          <mj-text font-size="14px" color="#999" line-height="20px" padding="5px 0 0 0">
+            <p>John Doe<br />
+              123 New St <br />
+              Alexender Platz, Berlin<br />
+              22330<br />
+              Germany<br />
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="14px" letter-spacing="1px" align="right" font-size="12px" font-weight="bold" padding="5px 0 0 0" text-transform="uppercase">
+            <p>Shipping address</p>
+          </mj-text>
+          <mj-text font-size="14px" color="#999" align="right" line-height="20px" padding="5px 0 0 0">
+            <p>John Doe<br />
+              123 New St <br />
+              Alexender Platz, Berlin<br />
+              22330<br />
+              Germany<br />
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-wrapper>
+ 

@@ -1,0 +1,75 @@
+version: "3.9"
+services:
+  frontend:
+    image: registry.byniwee.cloud/node:latest
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5173/"]
+      interval: 1s
+      timeout: 5s
+      retries: 50
+    environment:
+      - NODE_VERSION=--lts
+      - NODE_ENV=development
+    volumes:
+      - ./frontend:/app
+      - ./.env:/mnt/.env
+    command: "sh -c 'cp /mnt/.env /app/.env && yarn dev'"
+    working_dir: /app
+    ports:
+      - 3000:3000
+    
+  api:
+    image: registry.byniwee.cloud/node:latest 
+    command: "sh -c 'cp /mnt/.env /app/.env && yarn build && yarn develop'"
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    environment:
+      - NODE_VERSION=16
+      - NODE_ENV=development
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:1337/"]
+      interval: 1s
+      timeout: 5s
+      retries: 50
+    volumes:
+      - ./api:/app
+      - ./.env:/mnt/.env
+    working_dir: /app
+    ports:
+      - 1337:1337
+    
+  mariadb:
+    image: mariadb:latest
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-p$MYSQL_ROOT_PASSWORD" ]
+      interval: 1s
+      timeout: 5s
+      retries: 50
+    env_file: .env
+    volumes:
+      - mariadb:/config
+      - ./sql:/docker-entrypoint-initdb.d"
+    restart: unless-stopped
+
+  dragonfly:
+    image: 'docker.dragonflydb.io/dragonflydb/dragonfly'
+    env_file: .env
+    healthcheck:
+      test: ["CMD", "dragonfly", "version"]
+      interval: 1s
+      timeout: 5s
+      retries: 50
+    ulimits:
+      memlock: -1
+    ports:
+      - "6379:6379"
+    volumes:
+      - cache:/data
+
+volumes:
+  mariadb:
+  cache:

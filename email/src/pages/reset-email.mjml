@@ -1,0 +1,94 @@
+<mjml lang="fr">
+  <mj-head>
+    <mj-title>MTAS - Michelin Tire Anomaly Scanner</mj-title>
+    <mj-preview>Réinitialisation de votre mot de passe</mj-preview>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" font-size="16px" color="#54595f"></mj-all>
+      <mj-button border-radius="30px" line-height="30px" background-color="#54595f" color="white" align="center"></mj-button>
+      <mj-text font-weight="400" line-height="20px"></mj-text>
+      <mj-class name="footer-text" color="#54595f" font-size="14px" line-height="18px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      h1,
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+        line-height: normal;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      button {
+        background-color: #0060ae;
+      }
+
+      a {
+        color: #0060ae;
+        text-decoration: underline;
+      }
+    </mj-style>
+    <mj-style>
+      a,
+      span,
+      td,
+      th {
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#eaeaea">
+    <mj-section>
+      <mj-column>
+        <mj-spacer></mj-spacer>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/hero.mjml" />
+
+    <mj-section background-color="#ffffff" border-radius="0 0 20px 20px">
+
+      <mj-column>
+
+        <mj-text>
+          <h1>
+            Réinitialisation de votre mot de passe
+          </h1>
+        </mj-text>
+
+        <mj-text>
+          <p>Bonjour, </p>
+          <p>Nous avons reçu une demande de réinitialisation de mot de passe pour votre compte MTAS.
+            Aucune modification n'a été apportée à votre compte pour le moment.
+            Vous pouvez changer votre mot de passe en cliquant sur le bouton ci-dessous: </p>
+        </mj-text>
+
+        <mj-button href="<%= URL %>?code=<%= TOKEN %>">
+          Réinitialiser mon mot de passe
+        </mj-button>
+        <mj-text>
+          <p>
+            Si vous n'avez pas demandé de réinitialisation de mot de passe, vous pouvez ignorer cet email.
+          </p>
+
+        </mj-text>
+
+        <mj-text>
+          <p>Merci, <br /> MTAS</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-include path="../components/footer.mjml" />
+    <mj-include path="../components/common/bottom-spacer.mjml" />
+
+
+  </mj-body>
+</mjml>

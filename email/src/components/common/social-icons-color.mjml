@@ -1,0 +1,6 @@
+<mj-social mode="horizontal" align="center">
+  <mj-social-element alt="twitter-logo" icon-size="32px" src="../../../images/social/color/twitter-logo-transparent.png" href="#"></mj-social-element>
+  <mj-social-element alt="facebook-logo" icon-size="32px" src="../../../images/social/color/facebook-logo-transparent.png" href="#"></mj-social-element>
+  <mj-social-element alt="instagram-logo" icon-size="32px" src="../../../images/social/color/insta-logo-transparent.png" href="#"></mj-social-element>
+  <mj-social-element alt="youtube-logo" icon-size="32px" src="../../../images/social/color/youtube-logo-transparent.png" href="#"></mj-social-element>
+</mj-social>

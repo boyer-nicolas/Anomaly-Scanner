@@ -1,0 +1,12 @@
+<mj-section padding-bottom="0px">
+  <mj-column>
+    <mj-text align="center">
+      <a href="#" style="display: inline-block; text-decoration: none;">
+        <img src="../../../images/google-play.png" alt="play-store-logo" width="150px" />
+      </a>
+      <a href="#" style="display: inline-block; text-decoration: none;">
+        <img src="../../../images/app-store.png" alt="app-store-logo" width="150px" />
+      </a>
+    </mj-text>
+  </mj-column>
+</mj-section>

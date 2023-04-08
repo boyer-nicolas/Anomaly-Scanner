@@ -1,0 +1,66 @@
+  <mj-section padding-bottom="0px" padding-top="0px">
+    <mj-column inner-background-color="#f6f6f6" padding="10px 25px">
+      <mj-table css-class="receipt-table" padding="20px">
+        <tr>
+          <th colspan="2" align="left">
+            Date: 03.13.2020
+          </th>
+          <th align="right">
+            Receipt #: 234234234
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              Product 1
+              <span style="color: #a7a7a7;font-size: 14px;line-height: 14px;">
+                × 1
+              </span>
+            </p>
+          </td>
+          <td align="right" valign="top">
+            $12.00
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              Product 2
+              <span style="color: #a7a7a7;font-size: 14px;line-height: 14px;">
+                × 3
+              </span>
+            </p>
+          </td>
+          <td align="right" valign="top">
+            $14.00
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              Product 3
+              <span style="color: #a7a7a7;font-size: 14px;line-height: 14px;">
+                × 1
+              </span>
+            </p>
+          </td>
+          <td align="right" valign="top">
+            $18.00
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-width: 1px; border-bottom-color: #EAEEEB; border-bottom-style: solid; padding: 5px 0;" colspan="3"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="font-weight: bold; padding: 20px 0 0;">
+            Amount paid
+          </td>
+          <td align="right" style="font-weight: bold; padding: 20px 0 0;">
+            $44.00
+          </td>
+        </tr>
+
+      </mj-table>
+    </mj-column>
+
+  </mj-section>

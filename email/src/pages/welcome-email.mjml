@@ -1,0 +1,94 @@
+<mjml lang="fr">
+  <mj-head>
+    <mj-title>MTAS - Michelin Tire Anomaly Scanner</mj-title>
+    <mj-preview>Preview - Welcome to Coded Mails</mj-preview>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" font-size="16px" color="#54595f"></mj-all>
+      <mj-button border-radius="30px" line-height="30px" background-color="#54595f" color="white" align="center"></mj-button>
+      <mj-text font-weight="400" line-height="20px"></mj-text>
+      <mj-class name="heading" font-weight="400" font-size="18px" line-height="30px" />
+      <mj-class name="footer-text" color="#54595f" font-size="14px" line-height="18px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      h1,
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: normal;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: #0060ae;
+        text-decoration: underline;
+      }
+    </mj-style>
+    <mj-style>
+      a,
+      span,
+      td,
+      th {
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#eaeaea">
+    <mj-section>
+      <mj-column>
+        <mj-spacer></mj-spacer>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/hero.mjml" />
+
+    <mj-section background-color="#ffffff" border-radius="0 0 20px 20px">
+
+      <mj-column>
+
+        <mj-text>
+          <h1>
+            MTAS - Bienvenue
+          </h1>
+        </mj-text>
+
+        <mj-text>
+          <p>Afin d'accéder à l'application, vous devez vérifier que l'adresse enregistrée sur l'application vous appartient.</p>
+        </mj-text>
+
+        <mj-text>
+          <p>
+            Pour se faire, cliquez sur bouton ci-dessous afin de <a href="<%= URL %>?confirmation=<%= CODE %>">compléter votre enregistrement</a>
+            Une fois le processus terminé, vous pourrez accéder à l'ensemble des fonctionnalités de l'application.
+          </p>
+        </mj-text>
+
+        <mj-button href="<%= URL %>?confirmation=<%= CODE %>">
+          Compléter mon enregistrement
+        </mj-button>
+        <mj-text>
+          <p>En cas de question ou de problème technique, contatez <a href="mailto:support@niwee.fr">NiWee Productions</a></p>
+        </mj-text>
+
+        <mj-text>
+          <p>Merci, <br /> MTAS</p>
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+    <mj-include path="../components/common/bottom-spacer.mjml" />
+
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+  --color-primary: #005c9f;
+}
+
+@layer base {
+    html {
+      font-family: Poppins, system-ui, monospace;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 900;
+    }
+  }
+
+video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.menu :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active), .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):focus), .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):hover) {
+    background-color: transparent;
+    color: var(--color-primary);
+}

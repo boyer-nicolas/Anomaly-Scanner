@@ -1,0 +1,103 @@
+version: "3.9"
+services:
+  node_builder:
+    image: node:lts
+    restart: "no"
+    user: root:root
+    env_file: .env.prod
+    command: bash -c "cp /mnt/.env /app/.env && npm install && npm run build"
+    volumes:
+      - ./frontend:/app
+      - ./.env.prod:/mnt/.env
+    working_dir: /app
+
+  nginx:
+    image: "nginx:latest"
+    restart: unless-stopped
+    env_file: .env.prod
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 1s
+      timeout: 5s
+      retries: 50
+    networks:
+      - web
+      - mtas
+    depends_on:
+      node_builder:
+        condition: "service_completed_successfully"
+    volumes:
+      - ./config/server.conf:/etc/nginx/templates/default.conf.template
+      - ./frontend/dist:/var/www/html
+    environment:
+      - APP=app
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.mtas.rule=Host(`mtas.byniwee.cloud`)"
+      - "traefik.http.routers.mtas.entrypoints=websecure"
+      - "traefik.http.services.mtas.loadbalancer.server.port=80"
+      - "traefik.http.routers.mtas.tls.certresolver=cloudflare"
+
+  api_builder:
+    image: node:lts
+    restart: "no"
+    user: root:root
+    env_file: .env.prod
+    command: bash -c "cp /mnt/.env /app/.env && npm install && npm run build"
+    volumes:
+      - ./api:/app
+      - ./.env.prod:/mnt/.env
+    working_dir: /app
+
+  api:
+    image: node:16
+    command: "sh -c 'cp /mnt/.env /app/.env && npm run start'"
+    user: root:root
+    env_file: .env.prod
+    restart: unless-stopped
+    depends_on:
+      api_builder:
+        condition: "service_completed_successfully"
+    networks:
+      - web
+      - mtas
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.mtasapi.rule=Host(`mtasapi.byniwee.cloud`)"
+      - "traefik.http.routers.mtasapi.entrypoints=websecure"
+      - "traefik.http.services.mtasapi.loadbalancer.server.port=1337"
+      - "traefik.http.routers.mtasapi.tls.certresolver=cloudflare"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:1337/"]
+      interval: 1s
+      timeout: 5s
+      retries: 50
+    volumes:
+      - ./api:/app
+      - ./.env.prod:/mnt/.env
+    working_dir: /app
+
+  dragonfly:
+    image: "docker.dragonflydb.io/dragonflydb/dragonfly"
+    networks:
+      - mtas
+    env_file: .env.prod
+    ulimits:
+      memlock: -1
+    expose:
+      - 6379
+    volumes:
+      - cache:/data
+
+volumes:
+  cache:
+
+networks:
+  web:
+    external: true
+  mtas:
+    external: false

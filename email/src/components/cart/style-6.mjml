@@ -1,0 +1,59 @@
+ <mj-section padding="10px" background-color="#36ccf2">
+      <mj-column border-radius="4px" background-color="#e1faff">
+
+        <mj-table css-class="receipt-table">
+          <tr>
+            <th colspan="3" style="text-align:center;border-bottom:2px solid #36ccf2; font-size: 18px; line-height: 26px; padding: 10px;">Order summary </th>
+          </tr>
+          <tr>
+            <td style="width:60%; padding-top: 10px;">
+              <p>Product 1</p>
+            </td>
+            <td style="text-align:right;width:20%">1</td>
+            <td style="text-align:right;width:20%">€19.00</td>
+          </tr>
+          <tr>
+            <td style="width:60%; padding-top: 10px;">
+              <p>Product 2</p>
+            </td>
+            <td style="text-align:right;width:20%">4</td>
+            <td style="text-align:right;width:20%">€29.00</td>
+          </tr>
+          <tr>
+            <td style="width:60%; padding-top: 10px;">
+              <p>Product 3</p>
+            </td>
+            <td style="text-align:right;width:20%">2</td>
+            <td style="text-align:right;width:20%">€31.00</td>
+          </tr>
+
+          <tr>
+            <td style="border-bottom-width: 1px; border-bottom-color: #36ccf2; border-bottom-style: solid; padding-top: 10px;"></td>
+            <td style="border-bottom-width: 1px; border-bottom-color: #36ccf2; border-bottom-style: solid; padding-top: 10px;"></td>
+            <td style="border-bottom-width: 1px; border-bottom-color: #36ccf2; border-bottom-style: solid; padding-top: 10px;"></td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0; text-align:left" colspan="2">
+              <p><small>Subtotal</small></p>
+              <p><small>VAT</small></p>
+              <p><small>Discount</small></p>
+            </td>
+            <td style="padding:10px 0; text-align:right">
+              <p><small>€79.00</small></p>
+              <p><small>€0.00</small></p>
+              <p><small>€0.00</small></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="font-size:20px; line-height:30px;border-top:1px solid #36ccf2;font-weight: 500; padding:10px 0px 0px 0px; text-align:left;" colspan="2">
+              <p>Total</p>
+            </td>
+            <td style="font-size:20px;line-height:30px; border-top:1px solid #36ccf2;font-weight: 500;text-align:right; padding:10px 0px 0px 0px;">
+              <p>€79.00</p>
+            </td>
+          </tr>
+        </mj-table>
+
+      </mj-column>
+    </mj-section>

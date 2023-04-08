@@ -1,0 +1,132 @@
+  <mj-wrapper padding="0 25px">
+      <mj-section background-color="#f4f4f4">
+        <mj-column>
+          <mj-text font-size="16px" line-height="22px" font-weight="bold">
+            <h3>Items Ordered</h3>
+            <p><small>Date: 12-23-2019</small><p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0" background-color="#fcfcfc">
+        <mj-group>
+          <mj-column>
+            <mj-text>
+              <p>Product Name</p>
+              <p> <small>decription</small></p>
+
+            </mj-text>
+
+          </mj-column>
+          <mj-column>
+            <mj-text align="right">
+              <p>$28.00</p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+
+      </mj-section>
+
+      <mj-section padding="0" background-color="#fcfcfc">
+        <mj-group>
+          <mj-column>
+            <mj-text>
+              <p>Product Name</p>
+              <p> <small>decription</small></p>
+
+            </mj-text>
+
+          </mj-column>
+          <mj-column>
+            <mj-text align="right">
+              <p>$28.00</p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+
+      </mj-section>
+      <mj-section padding="0" background-color="#fcfcfc">
+        <mj-group>
+          <mj-column>
+            <mj-text>
+              <p>Product Name</p>
+              <p> <small>decription</small></p>
+
+            </mj-text>
+
+          </mj-column>
+          <mj-column>
+            <mj-text align="right">
+              <p>$28.00</p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+
+      </mj-section>
+      <mj-section background-color="#f4f4f4" padding="0">
+        <mj-group>
+          <mj-column>
+            <mj-text>
+              <p><small>Discount</small></p>
+              <p><small>Subtotal</small></p>
+              <p><small>Tax</small></p>
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-text align="right">
+              <p><small>$5.00</small></p>
+              <p><small>$233.00</small></p>
+              <p><small>$20.00</small></p>
+
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section background-color="#fcfcfc">
+        <mj-group>
+          <mj-column>
+            <mj-text font-size="18px" line-height="24px" font-weight="bold">
+              <p>Total</p>
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-text font-size="18px" font-weight="bold" line-height="24px" align="right">
+              <p>$253.00</p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+
+      <mj-section background-color="#f4f4f4">
+        <mj-group>
+          <mj-column>
+            <mj-text font-size="16px" line-height="22px" font-weight="bold">
+              <h3>Billing Info</h3>
+            </mj-text>
+            <mj-text font-size="14px" color="#999" line-height="20px">
+              <p>John Doe<br />
+                123 New St <br />
+                Alexender Platz, Berlin<br />
+                22330<br />
+                Germany<br />
+              </p>
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-text font-size="16px" line-height="22px" font-weight="bold" align="right">
+              <h3>Shipping address</h3>
+            </mj-text>
+            <mj-text font-size="14px" color="#999" align="right" line-height="20px">
+              <p>John Doe<br />
+                123 New St <br />
+                Alexender Platz, Berlin<br />
+                22330<br />
+                Germany<br />
+              </p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>

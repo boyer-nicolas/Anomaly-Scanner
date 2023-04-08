@@ -1,0 +1,21 @@
+{
+  "name": "codedmails-premium",
+  "version": "1.0.0",
+  "description": "This is the premium version of codedmails. This included MJML source files for all the templates.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel server mjml-watch",
+    "build": "mjml src/pages/**/*.mjml -o dist/",
+    "server": "http-server",
+    "watch": "mjml -w src/pages/**/*.mjml --config.validationLevel=strict --config.beautify true --config.minify false -o dist/",
+    "clean": "rm -rf dist/*"
+  },
+  "author": "Codedmails <support@codedmails.com>",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "mjml": "^4.6.3",
+    "npm-run-all": "^4.1.5"
+  }
+}
